@@ -6,16 +6,16 @@ public class AuthController : Controller
 {
     //Auth controller has created this area.
 
-    public ViewResult Register()
+    public IActionResult Register()
     {
         return View();
     }
-    public ViewResult Login(string redirectUrl)
+    public IActionResult Login(string redirectUrl)
     //This method has took redirectUrl parameters. its type is "String"
     {
         return View();
     }
-    public ViewResult ForgetPassword()
+    public IActionResult ForgetPassword()
     {
         return View();
     }
