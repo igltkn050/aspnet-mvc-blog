@@ -25,7 +25,9 @@
 <body>
 	
 	@*Navbar(Menu) was here. I have created _HeaderPartialViews.cshtml file and sent it.*@
-	@Html.Partial("_HeaderPartialViews")
+	<header class="header-top bg-grey justify-content-center>
+		@await Component.InvokeAsync("Navbar");
+	</header>
     
 	<div class="container">
             @RenderBody()
