@@ -9,8 +9,9 @@ public class HomeController : Controller
     //HomeController has created this area. 
     public IActionResult Index()
     {
-        return View();
-    }
+        //Hocam index sayfasındakileri silmek istemedim. Bu kısmı tam anlamadığım için o sayfaya yönlendirdim. 
+		return RedirectToAction("Index", "Blog");
+	}
 }
 
 

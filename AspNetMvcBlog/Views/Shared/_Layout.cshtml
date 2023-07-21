@@ -27,6 +27,7 @@
 	@*Navbar(Menu) was here. I have created _HeaderPartialViews.cshtml file and sent it.*@
 	<header class="header-top bg-grey justify-content-center>
 		@await Component.InvokeAsync("Navbar");
+
 	</header>
     
 	<div class="container">
@@ -36,7 +37,8 @@
 
 
 	@*Footer was here. I have created _FooterPartialViews.cshtml file and sent it.*@
-	@Html.Partial("_FooterPartialViews")
+		@await Component.InvokeAsync("Footer");
+	@*@Html.Partial("_FooterPartialViews")*@
 
 	<!-- THEME JAVASCRIPT FILES
 	================================================== -->
