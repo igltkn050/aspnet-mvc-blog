@@ -23,7 +23,8 @@ namespace AspNetMvcBlog.Controllers
         public IActionResult Detail(int id)
         //This action has name of id parameters. Parameters type is "String." 
         {
-            return View();
+            var blogText = database._Blogs.FirstOrDefault(x=>x.Id == id);
+            return View(blogText);
         }
 
         public IActionResult Search(int page, string query)
